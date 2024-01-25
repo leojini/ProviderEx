@@ -1,5 +1,5 @@
 
-- Provider 예제
+Provider 예제
 - main.dart: MultiProvider를 통해 생성
   
   ![image](https://github.com/leojini/ProviderEx/assets/17540345/7885fd5d-888f-48f5-a625-8eb75c11aafc)
