@@ -22,6 +22,6 @@ Provider 예제
 
 5. response_child.dart: GlobalStore에 저장된 httpResponseData의 데이터가 있을 경우 보여준다.
 
-   ![image](https://github.com/leojini/ProviderEx/assets/17540345/2717cc76-3ac1-4d46-bee0-e5bb631be9a3)
+  ![image](https://github.com/leojini/ProviderEx/assets/17540345/2717cc76-3ac1-4d46-bee0-e5bb631be9a3)
 
 
