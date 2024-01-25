@@ -21,42 +21,20 @@ class _ResponseChildState extends State<ResponseChild> {
   Widget build(BuildContext context) {
     final httpResponseData = context.watch<GlobalStore>().httpResponseData;
     return Center(
-      child: SizedBox(
-          width: double.infinity,
-          child: httpResponseData.isEmpty
-              ? Text('loading...', textAlign: TextAlign.center, style: TextStyle(fontSize: 12, fontWeight: FontWeight.normal),)
-              : ListView.builder(
-            itemCount: httpResponseData.length,
-            itemBuilder: (BuildContext c, int i) {
-              return Text(httpResponseData[i]['title'], style: TextStyle(fontSize: 12, fontWeight: FontWeight.normal));
-            },
-          )
-      )
-
-
-      // Column(
-      //   children: [
-      //     TextButton(
-      //       child: Text('뒤로 가기',
-      //         style: TextStyle(fontSize: 20, fontWeight: FontWeight.normal),
-      //       ),
-      //       onPressed: () {
-      //         Navigator.pop(context);
-      //       },
-      //     ),
-      //     SizedBox(
-      //         width: double.infinity,
-      //         child: httpResponseData.isEmpty
-      //             ? Text('loading...', textAlign: TextAlign.center, style: TextStyle(fontSize: 12, fontWeight: FontWeight.normal),)
-      //             : ListView.builder(
-      //           itemCount: httpResponseData.length,
-      //           itemBuilder: (BuildContext c, int i) {
-      //             return Text(httpResponseData[i]['title'], style: TextStyle(fontSize: 12, fontWeight: FontWeight.normal));
-      //           },
-      //         )
-      //     )
-      //   ],
-      // ),
+      child: Container(
+        child: SizedBox(
+            width: double.infinity,
+            child: httpResponseData.isEmpty
+                ? Text('loading...', textAlign: TextAlign.center, style: TextStyle(fontSize: 12, fontWeight: FontWeight.normal),)
+                : ListView.builder(
+              itemCount: httpResponseData.length,
+              itemBuilder: (BuildContext c, int i) {
+                return Text(httpResponseData[i]['title'], style: TextStyle(fontSize: 12, fontWeight: FontWeight.normal));
+              },
+            )
+        ),
+        color: Colors.white,
+      ),
     );
   }
 }
